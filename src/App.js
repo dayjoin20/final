@@ -1,27 +1,23 @@
 import React from 'react';
-import { BrowserRouter as  Routes , Route, } from "react-router-dom";
-import Homepage from './mycomponents/Homepage';
+import Homepage from './mycomponents/homepage';
 import Sorry from './mycomponents/sorry';
 import Profile from './mycomponents/profile';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
-
-function App(){
+function App() {
   return (
+    <div>
+      <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="*" element={<Sorry />} />
+      </Routes>
+      </Router>
     
-    
-      <div>
-      
-        
-            <Routes>
-            <Route path='/' element = {<Homepage />} />
-            <Route path='/Profile' element = {<Profile />} />
-            <Route path='/*' element = {<Sorry />} />
-            </Routes>
-
-      </div>
-    
+    </div>
   );
 }
+
 
 export default App;
