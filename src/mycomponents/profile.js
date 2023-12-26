@@ -8,7 +8,7 @@ function Profile (){
         <div className="main">
       <video src={videoBg} autoPlay loop muted/>
       <div className='content'>
-      <img className="logo" src={logo} />
+      <img className="logo" src={logo} alt=""/>
         <h1 style={{ color: "#ffffff8a" }}>My name is : Dechopon Sinchai Student ID : 6102783 </h1>
         <br />
         <h1 style={{ color: "#ffffff8a" }}>Student ID : 6102783 </h1>
